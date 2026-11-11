@@ -26,8 +26,8 @@ jobs:
           tree
       - name: Test Log Levels
         run: |
-          echo "::warning file=app.js,line=10::This is a code warning."
-          echo "::error file=app.js,line=15,col=5::Critical syntax error found!"
+          echo "::warning file=app.js,line=10::What have you done."
+          echo "::error file=app.js,line=15,col=5::Shits fucked!"
   deploy:
     runs-on: ubuntu-latest
     needs: build
