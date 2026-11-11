@@ -70,3 +70,4 @@ Find common terminology for reference [here](./CheatSheet.md)
 
 This edit should trigger workflow
 This edit should not trigger workflow
+This edit will be a pull request that triggers a workflow
