@@ -41,7 +41,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Random Generator
         id: custom_rng
-        uses: ./.github/actions/random-generator
+        uses: nrikez/action-marketplace-demo@v3
         with:
           user-name: 'Edward'
       - name: Return number
