@@ -37,10 +37,12 @@ jobs:
         run: echo "build_id=12345" >> $GITHUB_OUTPUT
       - name: Use Value
         run: echo "The build ID is ${{ steps.generator.outputs.build_id }}"
-  test-action:
-    runs-on: ubuntu-latest
-    steps:
       - name: Random Generator
-        uses: nrikez/.github/actions/random-generator@main
-    
+        id: custom_rng
+        uses: ./.github/actions/random-generator
+        with:
+          user-name: 'Edward'
+      - name: Return number
+        run: |
+          echo "Composite action random number generator: ${{ steps.custom_rng.outputs.generated.number }}"
     
