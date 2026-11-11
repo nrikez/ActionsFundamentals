@@ -67,4 +67,6 @@ For this workshop you need the following:
 
 ## Cheat Sheet
 Find common terminology for reference [here](./CheatSheet.md)
+
 This edit should trigger workflow
+This edit should not trigger workflow
